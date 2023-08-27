@@ -14,7 +14,7 @@ export default async function StaticPage() {
 const books =  await getBooks();
   return (
     <div>
-      <h1 className="text-xl text-blue-700">Satatic Page</h1>
+      <h1 className="text-xl text-center">server Page</h1>
     {books.map((book:Book) => 
       <ul key={book.id}>
         <li>{book.name} -{book.type}
